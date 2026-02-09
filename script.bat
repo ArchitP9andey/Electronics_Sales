@@ -1,0 +1,1 @@
+C:\Users\Administrator\PycharmProjects\Electronics_Project\.venv\Scripts\python.exe C:\Users\Administrator\PycharmProjects\Electronics_Project\main.py %*
