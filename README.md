@@ -1,8 +1,8 @@
-📊 Electronics Sales Data Analyzer
+# 📊 Electronics Sales Data Analyzer
 
 A Python data analysis project that reads electronic sales data from a CSV file and filters it for analytics — including today’s data and nearby dates.
 
-🚀 Project Overview
+# 🚀 Project Overview
 
 This project uses Python, Pandas, and Matplotlib to:
 
@@ -29,7 +29,7 @@ Electronics_Project/
 ├── External Libraries/
 └── Scratches and Consoles/
 
-🛠️ Technologies Used:-
+# 🛠️ Technologies Used:-
 
 1. Tool	Purpose
 2. Python	Main language
@@ -39,30 +39,30 @@ Electronics_Project/
 6. GitHub	Version control
 7. PyCharm	Development IDE
 
-🧠 How It Works
+# 🧠 How It Works
 
-**Import Libraries**
+### **Import Libraries**
 
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 
 
-**Load Sales Data**
+### **Load Sales Data**
 
 Loads sales information:
 
 df = pd.read_csv('Sales.csv')
 
 
-**Convert Dates**
+### **Convert Dates**
 
 Convert the date column into Python date objects:
 
 df['date'] = pd.to_datetime(df['date']).dt.date
 
 
-**Filter for Today**
+### **Filter for Today**
 
 This checks if entries exist for today’s date:
 
@@ -70,7 +70,7 @@ today = datetime.today().date()
 today_sales = df[df['date'] == today]
 print(today_sales)
 
-📈 **Demo Example**
+### 📈 **Demo Example**
 
 Before filtering:
 
@@ -85,7 +85,7 @@ After filtering for today (e.g., 2026-02-06):
 date,product,sales
 2026-02-06,Laptop,450
 
-📁 Sample CSV with Today + Nearby Dates
+# 📁 Sample CSV with Today + Nearby Dates
 
 You can use this sample CSV that includes today + nearby dates to test the logic:
 
@@ -93,30 +93,30 @@ You can use this sample CSV that includes today + nearby dates to test the logic
 
 🚀 How to Run:-
 
-1. Clone the repository:
+### 1. Clone the repository:
 
 git clone https://github.com/ArchitP9andey/Electronics_Sales.git
 
 
-2. Install dependencies:
+### 2. Install dependencies:
 
 pip install pandas matplotlib
 
 
-3. Run the script:
+### 3. Run the script:
 
 python main.py
 
 
 Check the output in your console.
 
-🛠 Tips & Enhancements
+# 🛠 Tips & Enhancements
 
 ✔ Add graphs to visualize trends
 ✔ Add weekly / monthly filters
 ✔ Export filtered results to Excel
 ✔ Deploy as a small web app (Streamlit / Flask)
 
-🙌 Credits
+# 🙌 Credits
 
 Made with ❤️ while learning Python data analysis techniques.
